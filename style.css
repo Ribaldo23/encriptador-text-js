@@ -1,0 +1,114 @@
+* {
+    background: rgb(241, 237, 245);
+    font-family: Inter, sans-serif;
+    font-size: 2vw; /* Usa unidades relativas para el tamaño del texto */
+    font-weight: 400;
+    line-height: 150%;
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%; /* Ajusta el ancho según sea necesario */
+}
+
+.main-container {
+    display: flex; /* Organiza las secciones horizontalmente */
+    flex-wrap: wrap; /* Permite que las secciones se envuelvan si no hay suficiente espacio */
+    gap: 20px; /* Espacio entre las secciones */
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 100vw; /* Asegura que el contenedor no sea más ancho que la pantalla */
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido en cada sección */
+    flex: 1; /* Permite que las secciones crezcan igual en altura */
+    min-width: 0; /* Permite que las secciones se reduzcan cuando sea necesario */
+    padding: 10px; /* Añade padding para el espacio interno */
+    max-width: 100%; /* Asegura que cada sección no sea más ancha que la pantalla */
+}
+
+.text-area {
+    border: none;
+    color: rgb(104, 104, 168);
+    margin-top: 20px; /* Ajusta el margen según sea necesario */
+    text-transform: lowercase;
+    width: 100%; /* Asegura que el área de texto use el ancho disponible */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+}
+
+::placeholder {
+    color: rgb(168, 168, 229);
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.mensaje {
+    background: white;
+    background-image: url("/img/muñeco.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    padding-left: 20px;
+    margin-top: 20px;
+    width: 100%; /* Asegura que el área de texto use el ancho disponible */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex; /* Organiza los botones horizontalmente */
+    flex-wrap: wrap; /* Permite que los botones se envuelvan si no hay suficiente espacio */
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 18px;
+    justify-content: center; /* Centra los botones horizontalmente */
+    width: 100%; /* Asegura que el contenedor de los botones use el ancho disponible */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+}
+
+.btn-desencriptar,
+.btn-encriptar,
+.copiar {
+    background: rgb(160, 177, 195);
+    border: 1px solid rgb(66, 66, 164);
+    border-radius: 24px;
+    color: rgb(87, 87, 174);
+    cursor: pointer;
+    height: 67px;
+    width: 30%; /* Ajusta el ancho de los botones para que se adapten al contenedor */
+    min-width: 120px; /* Establece un ancho mínimo para los botones */
+}
+
+.btn-encriptar {
+    background-color: rgb(80, 80, 208);
+    color: white;
+}
+
+.copiar {
+    background-color: rgb(255, 255, 255);
+}
+
+.informacion {
+    color: rgba(54, 46, 3, 0.542);
+    font-size: 1.5vw; /* Usa unidades relativas para el tamaño del texto */
+}
+
+
+
